@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680" font-family="Arial, sans-serif">
+  <rect width="960" height="680" fill="#F8F9FC" rx="12"/>
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#0D1B4B">Use Case Diagram — JanSankhya</text>
+  <line x1="80" y1="50" x2="880" y2="50" stroke="#E07B00" stroke-width="2"/>
+
+  <!-- System boundary -->
+  <rect x="200" y="65" width="600" height="570" rx="12" fill="white" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="500" y="88" text-anchor="middle" font-size="11" fill="#9CA3AF" font-weight="600">«system» JanSankhya — Census Management System</text>
+
+  <!-- USE CASES — Admin column -->
+  <!-- UC1 -->
+  <ellipse cx="340" cy="145" rx="90" ry="22" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="1.5"/>
+  <text x="340" y="149" text-anchor="middle" font-size="10" fill="#0D1B4B" font-weight="600">Register Citizen</text>
+  <!-- UC2 -->
+  <ellipse cx="340" cy="205" rx="90" ry="22" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="1.5"/>
+  <text x="340" y="209" text-anchor="middle" font-size="10" fill="#0D1B4B" font-weight="600">Generate UID Card</text>
+  <!-- UC3 -->
+  <ellipse cx="340" cy="265" rx="90" ry="22" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="1.5"/>
+  <text x="340" y="269" text-anchor="middle" font-size="10" fill="#0D1B4B" font-weight="600">Manage Enumerators</text>
+  <!-- UC4 -->
+  <ellipse cx="340" cy="325" rx="90" ry="22" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="1.5"/>
+  <text x="340" y="329" text-anchor="middle" font-size="10" fill="#0D1B4B" font-weight="600">Manage Supervisors</text>
+  <!-- UC5 -->
+  <ellipse cx="340" cy="385" rx="90" ry="22" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="1.5"/>
+  <text x="340" y="389" text-anchor="middle" font-size="10" fill="#0D1B4B" font-weight="600">View Census Records</text>
+  <!-- UC6 -->
+  <ellipse cx="340" cy="445" rx="90" ry="22" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="1.5"/>
+  <text x="340" y="449" text-anchor="middle" font-size="10" fill="#0D1B4B" font-weight="600">Generate Bulk Data</text>
+  <!-- UC7 shared -->
+  <ellipse cx="340" cy="505" rx="90" ry="22" fill="#F0FDF4" stroke="#166534" stroke-width="1.5"/>
+  <text x="340" y="509" text-anchor="middle" font-size="10" fill="#166534" font-weight="600">Login to System</text>
+  <!-- UC8 shared -->
+  <ellipse cx="340" cy="565" rx="90" ry="22" fill="#F0FDF4" stroke="#166534" stroke-width="1.5"/>
+  <text x="340" y="569" text-anchor="middle" font-size="10" fill="#166534" font-weight="600">View Dashboard</text>
+
+  <!-- USE CASES — Enumerator column -->
+  <!-- UC9 -->
+  <ellipse cx="640" cy="145" rx="90" ry="22" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="640" y="149" text-anchor="middle" font-size="10" fill="#1D4ED8" font-weight="600">Login (Android)</text>
+  <!-- UC10 -->
+  <ellipse cx="640" cy="205" rx="90" ry="22" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="640" y="209" text-anchor="middle" font-size="10" fill="#1D4ED8" font-weight="600">Scan QR Code</text>
+  <!-- UC11 -->
+  <ellipse cx="640" cy="265" rx="90" ry="22" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="640" y="269" text-anchor="middle" font-size="10" fill="#1D4ED8" font-weight="600">Enter UID Manually</text>
+  <!-- UC12 -->
+  <ellipse cx="640" cy="325" rx="90" ry="22" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="640" y="329" text-anchor="middle" font-size="10" fill="#1D4ED8" font-weight="600">Fill Census Form</text>
+  <!-- UC13 -->
+  <ellipse cx="640" cy="385" rx="90" ry="22" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="640" y="389" text-anchor="middle" font-size="10" fill="#1D4ED8" font-weight="600">Submit Census Record</text>
+  <!-- UC14 -->
+  <ellipse cx="640" cy="445" rx="90" ry="22" fill="#FFF7ED" stroke="#E07B00" stroke-width="1.5"/>
+  <text x="640" y="442" text-anchor="middle" font-size="10" fill="#E07B00" font-weight="600">Duplicate Detection</text>
+  <text x="640" y="455" text-anchor="middle" font-size="8" fill="#9CA3AF">«include»</text>
+  <!-- UC15 -->
+  <ellipse cx="640" cy="505" rx="90" ry="22" fill="#FFF7ED" stroke="#E07B00" stroke-width="1.5"/>
+  <text x="640" y="502" text-anchor="middle" font-size="10" fill="#E07B00" font-weight="600">GPS Location Capture</text>
+  <text x="640" y="515" text-anchor="middle" font-size="8" fill="#9CA3AF">«include»</text>
+  <!-- UC16 -->
+  <ellipse cx="640" cy="565" rx="90" ry="22" fill="#FFF7ED" stroke="#E07B00" stroke-width="1.5"/>
+  <text x="640" y="562" text-anchor="middle" font-size="10" fill="#E07B00" font-weight="600">Offline Data Storage</text>
+  <text x="640" y="575" text-anchor="middle" font-size="8" fill="#9CA3AF">«extend»</text>
+
+  <!-- ACTORS (outside boundary) -->
+  <!-- Administrator -->
+  <circle cx="105" cy="200" r="18" fill="none" stroke="#0D1B4B" stroke-width="2"/>
+  <line x1="105" y1="218" x2="105" y2="270" stroke="#0D1B4B" stroke-width="2"/>
+  <line x1="75" y1="245" x2="135" y2="245" stroke="#0D1B4B" stroke-width="2"/>
+  <line x1="105" y1="270" x2="80" y2="305" stroke="#0D1B4B" stroke-width="2"/>
+  <line x1="105" y1="270" x2="130" y2="305" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="105" y="322" text-anchor="middle" font-size="11" font-weight="bold" fill="#0D1B4B">Administrator</text>
+
+  <!-- Supervisor -->
+  <circle cx="105" cy="430" r="18" fill="none" stroke="#0D1B4B" stroke-width="2"/>
+  <line x1="105" y1="448" x2="105" y2="500" stroke="#0D1B4B" stroke-width="2"/>
+  <line x1="75" y1="475" x2="135" y2="475" stroke="#0D1B4B" stroke-width="2"/>
+  <line x1="105" y1="500" x2="80" y2="535" stroke="#0D1B4B" stroke-width="2"/>
+  <line x1="105" y1="500" x2="130" y2="535" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="105" y="552" text-anchor="middle" font-size="11" font-weight="bold" fill="#0D1B4B">Supervisor</text>
+
+  <!-- Enumerator -->
+  <circle cx="855" cy="330" r="18" fill="none" stroke="#1D4ED8" stroke-width="2"/>
+  <line x1="855" y1="348" x2="855" y2="400" stroke="#1D4ED8" stroke-width="2"/>
+  <line x1="825" y1="375" x2="885" y2="375" stroke="#1D4ED8" stroke-width="2"/>
+  <line x1="855" y1="400" x2="830" y2="435" stroke="#1D4ED8" stroke-width="2"/>
+  <line x1="855" y1="400" x2="880" y2="435" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="855" y="452" text-anchor="middle" font-size="11" font-weight="bold" fill="#1D4ED8">Enumerator</text>
+
+  <!-- Connections: Admin → UCs -->
+  <line x1="123" y1="190" x2="250" y2="145" stroke="#0D1B4B" stroke-width="1"/>
+  <line x1="123" y1="200" x2="250" y2="205" stroke="#0D1B4B" stroke-width="1"/>
+  <line x1="123" y1="210" x2="250" y2="265" stroke="#0D1B4B" stroke-width="1"/>
+  <line x1="123" y1="220" x2="250" y2="325" stroke="#0D1B4B" stroke-width="1"/>
+  <line x1="123" y1="225" x2="250" y2="385" stroke="#0D1B4B" stroke-width="1"/>
+  <line x1="123" y1="230" x2="250" y2="445" stroke="#0D1B4B" stroke-width="1"/>
+
+  <!-- Connections: Supervisor → shared UCs -->
+  <line x1="123" y1="440" x2="250" y2="505" stroke="#0D1B4B" stroke-width="1"/>
+  <line x1="123" y1="450" x2="250" y2="565" stroke="#0D1B4B" stroke-width="1"/>
+  <line x1="123" y1="420" x2="250" y2="385" stroke="#0D1B4B" stroke-width="1"/>
+
+  <!-- Connections: Enumerator → UCs -->
+  <line x1="837" y1="320" x2="730" y2="145" stroke="#1D4ED8" stroke-width="1"/>
+  <line x1="837" y1="325" x2="730" y2="205" stroke="#1D4ED8" stroke-width="1"/>
+  <line x1="837" y1="330" x2="730" y2="265" stroke="#1D4ED8" stroke-width="1"/>
+  <line x1="837" y1="335" x2="730" y2="325" stroke="#1D4ED8" stroke-width="1"/>
+  <line x1="837" y1="340" x2="730" y2="385" stroke="#1D4ED8" stroke-width="1"/>
+
+  <!-- include/extend arrows -->
+  <line x1="640" y1="347" x2="640" y2="423" stroke="#E07B00" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arroe)"/>
+  <line x1="640" y1="407" x2="640" y2="483" stroke="#E07B00" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arroe)"/>
+  <line x1="640" y1="467" x2="640" y2="543" stroke="#E07B00" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arroe)"/>
+
+  <!-- Legend -->
+  <rect x="200" y="648" width="12" height="12" rx="2" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="1"/>
+  <text x="218" y="659" font-size="9" fill="#374151">Admin Use Case</text>
+  <rect x="330" y="648" width="12" height="12" rx="2" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1"/>
+  <text x="348" y="659" font-size="9" fill="#374151">Enumerator Use Case</text>
+  <rect x="480" y="648" width="12" height="12" rx="2" fill="#FFF7ED" stroke="#E07B00" stroke-width="1"/>
+  <text x="498" y="659" font-size="9" fill="#374151">System Behaviour (include/extend)</text>
+  <rect x="690" y="648" width="12" height="12" rx="2" fill="#F0FDF4" stroke="#166534" stroke-width="1"/>
+  <text x="708" y="659" font-size="9" fill="#374151">Shared Use Case</text>
+
+  <defs>
+    <marker id="arroe" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#E07B00"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="6dp" android:orientation="horizontal">
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#FF9933"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#FFFFFF"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#138808"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="#0D1B4B" android:padding="24dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Settings" android:textColor="#FF9933" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Server Configuration" android:textColor="#FFFFFF"
+            android:textSize="22sp" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Change server IP without rebuilding"
+            android:textColor="#99FFFFFF" android:textSize="13sp" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#FFFFFF"
+            android:padding="20dp" android:elevation="2dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="SERVER IP ADDRESS" android:textColor="#757575"
+                android:textSize="11sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+
+            <EditText android:id="@+id/etIpAddress" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="e.g. 192.168.1.5"
+                android:background="@drawable/input_bg" android:padding="12dp"
+                android:inputType="text" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Enter the IP address of the PC running XAMPP Apache"
+                android:textColor="#9E9E9E" android:textSize="11sp" android:layout_marginBottom="20dp"/>
+
+            <TextView android:id="@+id/tvCurrent" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Current IP: "
+                android:textColor="#43A047" android:textSize="13sp" android:layout_marginBottom="16dp"/>
+
+            <Button android:id="@+id/btnSave" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="SAVE IP ADDRESS"
+                android:padding="16dp" android:backgroundTint="#1E88E5"
+                android:textColor="#FFFFFF" android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#FFFFFF"
+            android:padding="20dp" android:elevation="2dp" android:layout_marginTop="16dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="HOW TO FIND YOUR IP" android:textColor="#757575"
+                android:textSize="11sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="1. Open Command Prompt on your PC&#10;2. Type: ipconfig&#10;3. Find IPv4 Address under WiFi adapter&#10;4. Enter that IP here&#10;&#10;Both phone and PC must be on the same WiFi network!"
+                android:textColor="#424242" android:textSize="13sp" android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" font-family="Arial, sans-serif">
+  <rect width="1000" height="700" fill="#F8F9FC" rx="12"/>
+  <text x="500" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#0D1B4B">Level-1 Data Flow Diagram — JanSankhya</text>
+  <line x1="80" y1="50" x2="920" y2="50" stroke="#E07B00" stroke-width="2"/>
+
+  <!-- Helper: process circle -->
+  <!-- P1: Citizen Registration -->
+  <circle cx="200" cy="160" r="55" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="200" y="154" text-anchor="middle" font-size="9" font-weight="bold" fill="#0D1B4B">P1</text>
+  <text x="200" y="168" text-anchor="middle" font-size="9" fill="#0D1B4B">Citizen</text>
+  <text x="200" y="180" text-anchor="middle" font-size="9" fill="#0D1B4B">Registration</text>
+
+  <!-- P2: QR Code Generation -->
+  <circle cx="430" cy="160" r="55" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="430" y="154" text-anchor="middle" font-size="9" font-weight="bold" fill="#0D1B4B">P2</text>
+  <text x="430" y="168" text-anchor="middle" font-size="9" fill="#0D1B4B">QR Code</text>
+  <text x="430" y="180" text-anchor="middle" font-size="9" fill="#0D1B4B">Generation</text>
+
+  <!-- P3: Authentication -->
+  <circle cx="680" cy="160" r="55" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="680" y="154" text-anchor="middle" font-size="9" font-weight="bold" fill="#0D1B4B">P3</text>
+  <text x="680" y="168" text-anchor="middle" font-size="9" fill="#0D1B4B">User</text>
+  <text x="680" y="180" text-anchor="middle" font-size="9" fill="#0D1B4B">Authentication</text>
+
+  <!-- P4: QR Scan & Validate -->
+  <circle cx="200" cy="380" r="55" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="200" y="370" text-anchor="middle" font-size="9" font-weight="bold" fill="#1D4ED8">P4</text>
+  <text x="200" y="382" text-anchor="middle" font-size="9" fill="#1D4ED8">QR Scan &amp;</text>
+  <text x="200" y="394" text-anchor="middle" font-size="9" fill="#1D4ED8">Validate UID</text>
+
+  <!-- P5: Duplicate Detection -->
+  <circle cx="430" cy="380" r="55" fill="#FFF7ED" stroke="#E07B00" stroke-width="2"/>
+  <text x="430" y="370" text-anchor="middle" font-size="9" font-weight="bold" fill="#E07B00">P5</text>
+  <text x="430" y="382" text-anchor="middle" font-size="9" fill="#E07B00">Duplicate</text>
+  <text x="430" y="394" text-anchor="middle" font-size="9" fill="#E07B00">Detection</text>
+
+  <!-- P6: Census Data Collection -->
+  <circle cx="680" cy="380" r="55" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="680" y="370" text-anchor="middle" font-size="9" font-weight="bold" fill="#1D4ED8">P6</text>
+  <text x="680" y="382" text-anchor="middle" font-size="9" fill="#1D4ED8">Census Data</text>
+  <text x="680" y="394" text-anchor="middle" font-size="9" fill="#1D4ED8">Collection</text>
+
+  <!-- P7: GPS Tagging -->
+  <circle cx="870" cy="380" r="55" fill="#FFF7ED" stroke="#E07B00" stroke-width="2"/>
+  <text x="870" y="370" text-anchor="middle" font-size="9" font-weight="bold" fill="#E07B00">P7</text>
+  <text x="870" y="382" text-anchor="middle" font-size="9" fill="#E07B00">GPS Location</text>
+  <text x="870" y="394" text-anchor="middle" font-size="9" fill="#E07B00">Tagging</text>
+
+  <!-- P8: Offline Sync -->
+  <circle cx="430" cy="580" r="55" fill="#FFF7ED" stroke="#E07B00" stroke-width="2"/>
+  <text x="430" y="570" text-anchor="middle" font-size="9" font-weight="bold" fill="#E07B00">P8</text>
+  <text x="430" y="582" text-anchor="middle" font-size="9" fill="#E07B00">Offline</text>
+  <text x="430" y="594" text-anchor="middle" font-size="9" fill="#E07B00">Sync</text>
+
+  <!-- P9: Admin Review -->
+  <circle cx="680" cy="580" r="55" fill="#EFF6FF" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="680" y="570" text-anchor="middle" font-size="9" font-weight="bold" fill="#0D1B4B">P9</text>
+  <text x="680" y="582" text-anchor="middle" font-size="9" fill="#0D1B4B">Admin</text>
+  <text x="680" y="594" text-anchor="middle" font-size="9" fill="#0D1B4B">Review</text>
+
+  <!-- EXTERNAL ENTITIES -->
+  <rect x="60" y="80" width="90" height="40" fill="white" stroke="#0D1B4B" stroke-width="2" rx="4"/>
+  <text x="105" y="104" text-anchor="middle" font-size="10" font-weight="bold" fill="#0D1B4B">Admin</text>
+  
+  <rect x="830" y="80" width="110" height="40" fill="white" stroke="#0D1B4B" stroke-width="2" rx="4"/>
+  <text x="885" y="104" text-anchor="middle" font-size="10" font-weight="bold" fill="#0D1B4B">Supervisor</text>
+
+  <rect x="60" y="355" width="100" height="40" fill="white" stroke="#1D4ED8" stroke-width="2" rx="4"/>
+  <text x="110" y="379" text-anchor="middle" font-size="10" font-weight="bold" fill="#1D4ED8">Enumerator</text>
+
+  <!-- DATA STORES -->
+  <!-- DS1: citizens -->
+  <line x1="80" y1="260" x2="280" y2="260" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="80" y1="280" x2="280" y2="280" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="80" y1="260" x2="80" y2="280"/>
+  <line x1="280" y1="260" x2="280" y2="280"/>
+  <text x="90" y="274" font-size="9" fill="#9CA3AF">DS1</text>
+  <text x="180" y="274" text-anchor="middle" font-size="10" font-weight="bold" fill="#0D1B4B">citizens table</text>
+
+  <!-- DS2: census_records -->
+  <line x1="580" y1="480" x2="780" y2="480" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="580" y1="500" x2="780" y2="500" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="580" y1="480" x2="580" y2="500"/>
+  <line x1="780" y1="480" x2="780" y2="500"/>
+  <text x="590" y="494" font-size="9" fill="#9CA3AF">DS2</text>
+  <text x="680" y="494" text-anchor="middle" font-size="10" font-weight="bold" fill="#0D1B4B">census_records table</text>
+
+  <!-- DS3: Room DB -->
+  <line x1="280" y1="490" x2="380" y2="490" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="280" y1="510" x2="380" y2="510" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="280" y1="490" x2="280" y2="510"/>
+  <line x1="380" y1="490" x2="380" y2="510"/>
+  <text x="290" y="504" font-size="9" fill="#9CA3AF">DS3</text>
+  <text x="330" y="504" text-anchor="middle" font-size="10" font-weight="bold" fill="#1D4ED8">Room DB</text>
+
+  <!-- FLOW ARROWS -->
+  <!-- Admin → P1 -->
+  <line x1="150" y1="100" x2="175" y2="125" stroke="#0D1B4B" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="148" y="115" text-anchor="end" font-size="8" fill="#6B7280">citizen data</text>
+
+  <!-- P1 → DS1 -->
+  <line x1="200" y1="215" x2="200" y2="260" stroke="#0D1B4B" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="206" y="245" font-size="8" fill="#6B7280">store citizen</text>
+
+  <!-- P1 → P2 -->
+  <line x1="255" y1="160" x2="375" y2="160" stroke="#0D1B4B" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="315" y="153" text-anchor="middle" font-size="8" fill="#6B7280">citizen UID</text>
+
+  <!-- P2 → Admin (QR card) -->
+  <line x1="430" y1="105" x2="300" y2="100" stroke="#0D1B4B" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#ld)"/>
+  <text x="365" y="96" text-anchor="middle" font-size="8" fill="#E07B00">QR card</text>
+
+  <!-- Admin → P3 -->
+  <line x1="150" y1="100" x2="628" y2="140" stroke="#0D1B4B" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="400" y="115" text-anchor="middle" font-size="8" fill="#6B7280">credentials</text>
+
+  <!-- Enumerator → P3 -->
+  <line x1="160" y1="360" x2="628" y2="180" stroke="#1D4ED8" stroke-width="1.2" marker-end="url(#ld)"/>
+
+  <!-- Enumerator → P4 -->
+  <line x1="160" y1="375" x2="145" y2="375" stroke="#1D4ED8" stroke-width="1.2" marker-end="url(#ld)"/>
+
+  <!-- P4 → DS1 -->
+  <line x1="200" y1="325" x2="200" y2="280" stroke="#1D4ED8" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="206" y="310" font-size="8" fill="#1D4ED8">lookup UID</text>
+
+  <!-- P4 → P5 -->
+  <line x1="255" y1="380" x2="375" y2="380" stroke="#1D4ED8" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="315" y="373" text-anchor="middle" font-size="8" fill="#6B7280">valid UID</text>
+
+  <!-- P5 → P6 -->
+  <line x1="485" y1="380" x2="625" y2="380" stroke="#E07B00" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="555" y="373" text-anchor="middle" font-size="8" fill="#6B7280">no duplicate</text>
+
+  <!-- P6 → P7 -->
+  <line x1="735" y1="380" x2="815" y2="380" stroke="#1D4ED8" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="775" y="373" text-anchor="middle" font-size="8" fill="#6B7280">submit</text>
+
+  <!-- P7 → DS2 -->
+  <line x1="870" y1="435" x2="780" y2="480" stroke="#E07B00" stroke-width="1.2" marker-end="url(#ld)"/>
+  <text x="845" y="470" font-size="8" fill="#E07B00">+GPS coords</text>
+
+  <!-- P6 → P8 (offline) -->
+  <line x1="680" y1="435" x2="485" y2="560" stroke="#1D4ED8" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#ld)"/>
+  <text x="580" y="510" font-size="8" fill="#9CA3AF">offline</text>
+
+  <!-- P8 → DS3 -->
+  <line x1="430" y1="525" x2="380" y2="510" stroke="#E07B00" stroke-width="1.2" marker-end="url(#ld)"/>
+
+  <!-- P8 → DS2 (sync) -->
+  <line x1="485" y1="580" x2="580" y2="490" stroke="#E07B00" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#ld)"/>
+  <text x="535" y="540" font-size="8" fill="#E07B00">sync</text>
+
+  <!-- DS2 → P9 -->
+  <line x1="680" y1="500" x2="680" y2="525" stroke="#0D1B4B" stroke-width="1.2" marker-end="url(#ld)"/>
+
+  <!-- P9 → Supervisor -->
+  <line x1="720" y1="555" x2="885" y2="120" stroke="#0D1B4B" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#ld)"/>
+  <text x="830" y="340" font-size="8" fill="#9CA3AF">reports</text>
+
+  <defs>
+    <marker id="ld" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>

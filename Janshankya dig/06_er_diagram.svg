@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Arial, sans-serif">
+  <rect width="960" height="640" fill="#F8F9FC" rx="12"/>
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#0D1B4B">Entity-Relationship Diagram — JanSankhya</text>
+  <line x1="80" y1="50" x2="880" y2="50" stroke="#E07B00" stroke-width="2"/>
+
+  <!-- ENTITY: citizens -->
+  <rect x="60" y="80" width="220" height="360" rx="10" fill="white" stroke="#0D1B4B" stroke-width="2"/>
+  <rect x="60" y="80" width="220" height="36" rx="10" fill="#0D1B4B"/>
+  <rect x="60" y="104" width="220" height="12" fill="#0D1B4B"/>
+  <text x="170" y="104" text-anchor="middle" font-size="13" font-weight="bold" fill="white">citizens</text>
+  <line x1="60" y1="116" x2="280" y2="116" stroke="#0D1B4B" stroke-width="1"/>
+  <text x="75" y="134" font-size="10" fill="#E07B00" font-weight="bold">PK  uid VARCHAR(15)</text>
+  <line x1="75" y1="140" x2="265" y2="140" stroke="#E5E7EB"/>
+  <text x="75" y="156" font-size="10" fill="#374151">name VARCHAR(150)</text>
+  <text x="75" y="174" font-size="10" fill="#374151">first_name VARCHAR(75)</text>
+  <text x="75" y="192" font-size="10" fill="#374151">last_name VARCHAR(75)</text>
+  <text x="75" y="210" font-size="10" fill="#374151">gender VARCHAR(10)</text>
+  <text x="75" y="228" font-size="10" fill="#374151">dob VARCHAR(20)</text>
+  <text x="75" y="246" font-size="10" fill="#374151">age INT</text>
+  <text x="75" y="264" font-size="10" fill="#374151">religion VARCHAR(50)</text>
+  <text x="75" y="282" font-size="10" fill="#374151">caste VARCHAR(20)</text>
+  <text x="75" y="300" font-size="10" fill="#374151">state VARCHAR(100)</text>
+  <text x="75" y="318" font-size="10" fill="#374151">district VARCHAR(100)</text>
+  <text x="75" y="336" font-size="10" fill="#374151">pincode VARCHAR(10)</text>
+  <text x="75" y="354" font-size="10" fill="#374151">mobile VARCHAR(15)</text>
+  <text x="75" y="372" font-size="10" fill="#1D4ED8">FK  supervisor_id</text>
+  <text x="75" y="390" font-size="10" fill="#374151">created_at TIMESTAMP</text>
+  <text x="75" y="420" font-size="9" fill="#9CA3AF" font-style="italic">5000+ registered citizens</text>
+
+  <!-- ENTITY: census_records -->
+  <rect x="360" y="80" width="240" height="440" rx="10" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+  <rect x="360" y="80" width="240" height="36" rx="10" fill="#1D4ED8"/>
+  <rect x="360" y="104" width="240" height="12" fill="#1D4ED8"/>
+  <text x="480" y="104" text-anchor="middle" font-size="13" font-weight="bold" fill="white">census_records</text>
+  <line x1="360" y1="116" x2="600" y2="116" stroke="#1D4ED8" stroke-width="1"/>
+  <text x="375" y="134" font-size="10" fill="#E07B00" font-weight="bold">PK  id INT AUTO_INC</text>
+  <line x1="375" y1="140" x2="585" y2="140" stroke="#E5E7EB"/>
+  <text x="375" y="156" font-size="10" fill="#1D4ED8">FK  uid VARCHAR(20)</text>
+  <text x="375" y="174" font-size="10" fill="#1D4ED8">FK  enumerator_id</text>
+  <line x1="375" y1="180" x2="585" y2="180" stroke="#E5E7EB"/>
+  <text x="375" y="198" font-size="10" fill="#374151">education VARCHAR(50)</text>
+  <text x="375" y="216" font-size="10" fill="#374151">field_of_study</text>
+  <text x="375" y="234" font-size="10" fill="#374151">blood_group</text>
+  <text x="375" y="252" font-size="10" fill="#374151">disability</text>
+  <text x="375" y="270" font-size="10" fill="#374151">employment_status</text>
+  <text x="375" y="288" font-size="10" fill="#374151">occupation</text>
+  <text x="375" y="306" font-size="10" fill="#374151">monthly_income INT</text>
+  <text x="375" y="324" font-size="10" fill="#374151">house_type</text>
+  <text x="375" y="342" font-size="10" fill="#374151">drinking_water</text>
+  <text x="375" y="360" font-size="10" fill="#374151">electricity</text>
+  <text x="375" y="378" font-size="10" fill="#374151">total_people INT</text>
+  <text x="375" y="396" font-size="10" fill="#374151">total_males INT</text>
+  <text x="375" y="414" font-size="10" fill="#374151">migration_status</text>
+  <text x="375" y="432" font-size="10" fill="#374151">govt_schemes</text>
+  <text x="375" y="450" font-size="10" fill="#E07B00">latitude DECIMAL(10,8)</text>
+  <text x="375" y="468" font-size="10" fill="#E07B00">longitude DECIMAL(11,8)</text>
+  <text x="375" y="486" font-size="10" fill="#374151">created_at DATETIME</text>
+  <text x="375" y="508" font-size="9" fill="#9CA3AF" font-style="italic">37 fields captured</text>
+
+  <!-- ENTITY: enumerators -->
+  <rect x="680" y="80" width="220" height="280" rx="10" fill="white" stroke="#166534" stroke-width="2"/>
+  <rect x="680" y="80" width="220" height="36" rx="10" fill="#166534"/>
+  <rect x="680" y="104" width="220" height="12" fill="#166534"/>
+  <text x="790" y="104" text-anchor="middle" font-size="13" font-weight="bold" fill="white">enumerators</text>
+  <line x1="680" y1="116" x2="900" y2="116" stroke="#166534" stroke-width="1"/>
+  <text x="695" y="134" font-size="10" fill="#E07B00" font-weight="bold">PK  id VARCHAR(10)</text>
+  <line x1="695" y1="140" x2="885" y2="140" stroke="#E5E7EB"/>
+  <text x="695" y="158" font-size="10" fill="#374151">name VARCHAR(100)</text>
+  <text x="695" y="176" font-size="10" fill="#374151">phone VARCHAR(15)</text>
+  <text x="695" y="194" font-size="10" fill="#374151">state VARCHAR(100)</text>
+  <text x="695" y="212" font-size="10" fill="#374151">district VARCHAR(100)</text>
+  <text x="695" y="230" font-size="10" fill="#374151">password VARCHAR(255)</text>
+  <text x="695" y="248" font-size="10" fill="#374151">assigned INT</text>
+  <text x="695" y="266" font-size="10" fill="#374151">completed INT</text>
+  <text x="695" y="284" font-size="10" fill="#374151">pending INT</text>
+  <text x="695" y="302" font-size="10" fill="#1D4ED8">FK  supervisor_id</text>
+  <text x="695" y="322" font-size="9" fill="#9CA3AF" font-style="italic">Field data collectors</text>
+
+  <!-- ENTITY: staff -->
+  <rect x="680" y="400" width="220" height="200" rx="10" fill="white" stroke="#0D1B4B" stroke-width="2"/>
+  <rect x="680" y="400" width="220" height="36" rx="10" fill="#0D1B4B"/>
+  <rect x="680" y="424" width="220" height="12" fill="#0D1B4B"/>
+  <text x="790" y="424" text-anchor="middle" font-size="13" font-weight="bold" fill="white">staff</text>
+  <line x1="680" y1="436" x2="900" y2="436" stroke="#0D1B4B" stroke-width="1"/>
+  <text x="695" y="454" font-size="10" fill="#E07B00" font-weight="bold">PK  id VARCHAR(10)</text>
+  <line x1="695" y1="460" x2="885" y2="460" stroke="#E5E7EB"/>
+  <text x="695" y="478" font-size="10" fill="#374151">name VARCHAR(100)</text>
+  <text x="695" y="496" font-size="10" fill="#374151">role [admin|supervisor]</text>
+  <text x="695" y="514" font-size="10" fill="#374151">password VARCHAR(255)</text>
+  <text x="695" y="532" font-size="10" fill="#374151">area VARCHAR(100)</text>
+  <text x="695" y="550" font-size="10" fill="#374151">state VARCHAR(100)</text>
+  <text x="695" y="568" font-size="10" fill="#374151">created_at DATE</text>
+  <text x="695" y="588" font-size="9" fill="#9CA3AF" font-style="italic">Admin &amp; Supervisors</text>
+
+  <!-- RELATIONSHIPS -->
+  <!-- citizens → census_records (1:N) -->
+  <line x1="280" y1="200" x2="360" y2="200" stroke="#E07B00" stroke-width="2" marker-end="url(#re)"/>
+  <text x="290" y="192" font-size="9" fill="#E07B00" font-weight="bold">1</text>
+  <text x="340" y="192" font-size="9" fill="#E07B00" font-weight="bold">N</text>
+  <rect x="288" y="207" width="68" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="322" y="219" text-anchor="middle" font-size="9" fill="#374151">has records</text>
+
+  <!-- enumerators → census_records (1:N) -->
+  <line x1="680" y1="220" x2="600" y2="280" stroke="#166534" stroke-width="2" marker-end="url(#reg)"/>
+  <text x="680" y="215" font-size="9" fill="#166534" font-weight="bold">1</text>
+  <text x="612" y="282" font-size="9" fill="#166534" font-weight="bold">N</text>
+  <rect x="618" y="240" width="56" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="646" y="252" text-anchor="middle" font-size="9" fill="#374151">submits</text>
+
+  <!-- staff → enumerators (1:N) -->
+  <line x1="790" y1="400" x2="790" y2="360" stroke="#0D1B4B" stroke-width="2" marker-end="url(#ren)"/>
+  <text x="796" y="392" font-size="9" fill="#0D1B4B" font-weight="bold">1</text>
+  <text x="796" y="366" font-size="9" fill="#0D1B4B" font-weight="bold">N</text>
+  <rect x="800" y="375" width="52" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="826" y="387" text-anchor="middle" font-size="9" fill="#374151">manages</text>
+
+  <!-- staff → citizens (1:N) -->
+  <line x1="680" y1="490" x2="280" y2="310" stroke="#0D1B4B" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#ren)"/>
+  <rect x="430" y="388" width="62" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="461" y="400" text-anchor="middle" font-size="9" fill="#374151">supervises</text>
+
+  <defs>
+    <marker id="re" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#E07B00"/>
+    </marker>
+    <marker id="reg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#166534"/>
+    </marker>
+    <marker id="ren" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0D1B4B"/>
+    </marker>
+  </defs>
+</svg>

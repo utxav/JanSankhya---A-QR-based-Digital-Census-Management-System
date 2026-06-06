@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" font-family="Arial, sans-serif">
+  <rect width="900" height="540" fill="#F8F9FC" rx="12"/>
+  <text x="450" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#0D1B4B">Level-0 Data Flow Diagram — JanSankhya</text>
+  <line x1="80" y1="50" x2="820" y2="50" stroke="#E07B00" stroke-width="2"/>
+
+  <!-- Central Process -->
+  <circle cx="450" cy="270" r="110" fill="#0D1B4B"/>
+  <text x="450" y="258" text-anchor="middle" font-size="13" font-weight="bold" fill="white">0</text>
+  <text x="450" y="278" text-anchor="middle" font-size="12" fill="white">JanSankhya</text>
+  <text x="450" y="296" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.6)">Census Management</text>
+
+  <!-- External Entities (rectangles) -->
+  <!-- Administrator -->
+  <rect x="40" y="80" width="140" height="60" fill="white" stroke="#0D1B4B" stroke-width="2" rx="6"/>
+  <text x="110" y="106" text-anchor="middle" font-size="12" font-weight="bold" fill="#0D1B4B">Administrator</text>
+  <text x="110" y="124" text-anchor="middle" font-size="10" fill="#6B7280">E1</text>
+
+  <!-- Supervisor -->
+  <rect x="720" y="80" width="140" height="60" fill="white" stroke="#0D1B4B" stroke-width="2" rx="6"/>
+  <text x="790" y="106" text-anchor="middle" font-size="12" font-weight="bold" fill="#0D1B4B">Supervisor</text>
+  <text x="790" y="124" text-anchor="middle" font-size="10" fill="#6B7280">E2</text>
+
+  <!-- Enumerator -->
+  <rect x="40" y="390" width="140" height="60" fill="white" stroke="#1D4ED8" stroke-width="2" rx="6"/>
+  <text x="110" y="416" text-anchor="middle" font-size="12" font-weight="bold" fill="#1D4ED8">Enumerator</text>
+  <text x="110" y="434" text-anchor="middle" font-size="10" fill="#6B7280">E3</text>
+
+  <!-- Citizen -->
+  <rect x="720" y="390" width="140" height="60" fill="white" stroke="#166534" stroke-width="2" rx="6"/>
+  <text x="790" y="416" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Citizen</text>
+  <text x="790" y="434" text-anchor="middle" font-size="10" fill="#6B7280">E4</text>
+
+  <!-- Arrows: Admin → System -->
+  <line x1="180" y1="105" x2="342" y2="215" stroke="#0D1B4B" stroke-width="1.5" marker-end="url(#a0)"/>
+  <rect x="188" y="140" width="110" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="243" y="152" text-anchor="middle" font-size="9" fill="#0D1B4B">Citizen Registration Data</text>
+
+  <!-- System → Admin -->
+  <line x1="342" y1="200" x2="180" y2="115" stroke="#0D1B4B" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a0)"/>
+  <rect x="195" y="165" width="100" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="245" y="177" text-anchor="middle" font-size="9" fill="#E07B00">Reports, UID Cards</text>
+
+  <!-- Supervisor → System -->
+  <line x1="720" y1="105" x2="560" y2="215" stroke="#0D1B4B" stroke-width="1.5" marker-end="url(#a0)"/>
+  <rect x="604" y="140" width="100" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="654" y="152" text-anchor="middle" font-size="9" fill="#0D1B4B">Zone Assignment</text>
+
+  <!-- System → Supervisor -->
+  <line x1="560" y1="200" x2="720" y2="115" stroke="#0D1B4B" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a0)"/>
+  <rect x="604" y="162" width="100" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="654" y="174" text-anchor="middle" font-size="9" fill="#E07B00">Progress, Statistics</text>
+
+  <!-- Enumerator → System -->
+  <line x1="180" y1="415" x2="342" y2="325" stroke="#1D4ED8" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="188" y="360" width="105" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="240" y="372" text-anchor="middle" font-size="9" fill="#1D4ED8">Census Form Data</text>
+
+  <!-- System → Enumerator -->
+  <line x1="342" y1="340" x2="180" y2="430" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a1)"/>
+  <rect x="188" y="383" width="105" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="240" y="395" text-anchor="middle" font-size="9" fill="#1D4ED8">Citizen Profile Data</text>
+
+  <!-- Citizen → System (via enumerator QR scan) -->
+  <line x1="720" y1="415" x2="558" y2="325" stroke="#166534" stroke-width="1.5" marker-end="url(#a2)"/>
+  <rect x="604" y="358" width="90" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="649" y="370" text-anchor="middle" font-size="9" fill="#166534">UID / QR Code</text>
+
+  <!-- System → Citizen -->
+  <line x1="558" y1="340" x2="720" y2="430" stroke="#166534" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a2)"/>
+  <rect x="608" y="380" width="90" height="16" rx="3" fill="white" stroke="#E5E7EB"/>
+  <text x="653" y="392" text-anchor="middle" font-size="9" fill="#166534">UID Card Issued</text>
+
+  <!-- Data stores (open rectangles) -->
+  <!-- DS1: MySQL -->
+  <line x1="450" y1="380" x2="450" y2="460" stroke="#0D1B4B" stroke-width="1.5" marker-end="url(#a0)"/>
+  <rect x="350" y="460" width="200" height="40" fill="white" stroke="#0D1B4B" stroke-width="1.5"/>
+  <line x1="350" y1="460" x2="350" y2="500"/>
+  <line x1="550" y1="460" x2="550" y2="500"/>
+  <text x="360" y="476" font-size="10" fill="#6B7280">DS1</text>
+  <text x="450" y="476" text-anchor="middle" font-size="10" font-weight="bold" fill="#0D1B4B">MySQL Database</text>
+  <text x="450" y="492" text-anchor="middle" font-size="9" fill="#6B7280">citizens · census_records · staff · enumerators</text>
+
+  <defs>
+    <marker id="a0" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0D1B4B"/>
+    </marker>
+    <marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#1D4ED8"/>
+    </marker>
+    <marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#166534"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login_bg"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B30D1B4B"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JanSankhya"
+            android:textColor="#FFFFFF"
+            android:textSize="52sp"
+            android:textStyle="bold" />
+
+
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="3dp"
+            android:background="#FF9933"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Census Management System"
+            android:textColor="#CCFFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digital India · QR-based Citizen Identification"
+            android:textColor="#99FFFFFF"
+            android:textSize="11sp"
+            android:layout_marginTop="6dp"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#FF9933"
+            android:layout_marginTop="48dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top">
+        <View android:layout_width="0dp" android:layout_height="6dp"
+            android:layout_weight="1" android:background="#FF9933"/>
+        <View android:layout_width="0dp" android:layout_height="6dp"
+            android:layout_weight="1" android:background="#FFFFFF"/>
+        <View android:layout_width="0dp" android:layout_height="6dp"
+            android:layout_weight="1" android:background="#138808"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utsav Patel · Nirma University"
+        android:textColor="#66FFFFFF"
+        android:textSize="11sp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"/>
+
+</FrameLayout>

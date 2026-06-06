@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="780" viewBox="0 0 900 780" font-family="Arial, sans-serif">
+  <rect width="900" height="780" fill="#F8F9FC" rx="12"/>
+  <text x="450" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#0D1B4B">Android Application Flow Diagram — JanSankhya</text>
+  <line x1="80" y1="50" x2="820" y2="50" stroke="#E07B00" stroke-width="2"/>
+
+  <!-- START -->
+  <ellipse cx="450" cy="90" rx="50" ry="24" fill="#0D1B4B"/>
+  <text x="450" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="white">START</text>
+
+  <!-- Arrow -->
+  <line x1="450" y1="114" x2="450" y2="140" stroke="#374151" stroke-width="1.5" marker-end="url(#af)"/>
+
+  <!-- SplashActivity -->
+  <rect x="335" y="140" width="230" height="52" rx="10" fill="white" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="450" y="162" text-anchor="middle" font-size="12" font-weight="bold" fill="#0D1B4B">SplashActivity</text>
+  <text x="450" y="180" text-anchor="middle" font-size="10" fill="#6B7280">JanSankhya branding · 2 sec delay</text>
+
+  <line x1="450" y1="192" x2="450" y2="218" stroke="#374151" stroke-width="1.5" marker-end="url(#af)"/>
+
+  <!-- LoginActivity -->
+  <rect x="335" y="218" width="230" height="52" rx="10" fill="white" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="450" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#0D1B4B">LoginActivity</text>
+  <text x="450" y="258" text-anchor="middle" font-size="10" fill="#6B7280">Enumerator credentials · PHP auth API</text>
+
+  <!-- Decision: Valid login? -->
+  <line x1="450" y1="270" x2="450" y2="296" stroke="#374151" stroke-width="1.5" marker-end="url(#af)"/>
+  <polygon points="450,296 510,326 450,356 390,326" fill="#FFF7ED" stroke="#E07B00" stroke-width="2"/>
+  <text x="450" y="322" text-anchor="middle" font-size="10" font-weight="bold" fill="#E07B00">Valid?</text>
+  <!-- No -->
+  <line x1="390" y1="326" x2="335" y2="326" stroke="#E53935" stroke-width="1.5" marker-end="url(#afr)"/>
+  <line x1="335" y1="326" x2="335" y2="244" stroke="#E53935" stroke-width="1.5"/>
+  <line x1="335" y1="244" x2="335" y2="244" stroke="#E53935" stroke-width="1.5" marker-end="url(#afr)"/>
+  <text x="362" y="318" text-anchor="middle" font-size="9" fill="#E53935">No — retry</text>
+
+  <!-- Yes -->
+  <line x1="450" y1="356" x2="450" y2="382" stroke="#166534" stroke-width="1.5" marker-end="url(#afg)"/>
+  <text x="462" y="372" font-size="9" fill="#166534">Yes</text>
+
+  <!-- HomeActivity -->
+  <rect x="335" y="382" width="230" height="52" rx="10" fill="white" stroke="#0D1B4B" stroke-width="2"/>
+  <text x="450" y="404" text-anchor="middle" font-size="12" font-weight="bold" fill="#0D1B4B">HomeActivity</text>
+  <text x="450" y="422" text-anchor="middle" font-size="10" fill="#6B7280">Dashboard · Today's &amp; Total surveys</text>
+
+  <line x1="450" y1="434" x2="450" y2="460" stroke="#374151" stroke-width="1.5" marker-end="url(#af)"/>
+
+  <!-- ScanActivity -->
+  <rect x="335" y="460" width="230" height="52" rx="10" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="450" y="482" text-anchor="middle" font-size="12" font-weight="bold" fill="#1D4ED8">ScanActivity</text>
+  <text x="450" y="500" text-anchor="middle" font-size="10" fill="#6B7280">QR Camera Scan OR Manual UID Entry</text>
+
+  <!-- Decision: Valid UID / Not duplicate? -->
+  <line x1="450" y1="512" x2="450" y2="538" stroke="#374151" stroke-width="1.5" marker-end="url(#af)"/>
+  <polygon points="450,538 530,568 450,598 370,568" fill="#FFF7ED" stroke="#E07B00" stroke-width="2"/>
+  <text x="450" y="560" text-anchor="middle" font-size="9" font-weight="bold" fill="#E07B00">Valid &amp;</text>
+  <text x="450" y="575" text-anchor="middle" font-size="9" font-weight="bold" fill="#E07B00">No Dup?</text>
+
+  <!-- No: Duplicate warning -->
+  <line x1="370" y1="568" x2="200" y2="568" stroke="#E53935" stroke-width="1.5" marker-end="url(#afr)"/>
+  <rect x="90" y="553" width="110" height="30" rx="6" fill="#FEE2E2" stroke="#E53935" stroke-width="1"/>
+  <text x="145" y="568" text-anchor="middle" font-size="9" fill="#E53935">⚠ Duplicate or</text>
+  <text x="145" y="580" text-anchor="middle" font-size="9" fill="#E53935">Not Found</text>
+  <text x="285" y="560" text-anchor="middle" font-size="9" fill="#E53935">No</text>
+
+  <!-- Yes: proceed to form -->
+  <line x1="450" y1="598" x2="450" y2="624" stroke="#166534" stroke-width="1.5" marker-end="url(#afg)"/>
+  <text x="462" y="616" font-size="9" fill="#166534">Yes</text>
+
+  <!-- 7-step form (horizontal) -->
+  <rect x="80" y="624" width="740" height="52" rx="10" fill="white" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="450" y="646" text-anchor="middle" font-size="12" font-weight="bold" fill="#1D4ED8">7-Step Census Form</text>
+  <text x="450" y="664" text-anchor="middle" font-size="9" fill="#6B7280">Personal → Employment → Housing → Family → Health → Migration → Govt Schemes</text>
+
+  <!-- Step form sub-steps -->
+  <line x1="450" y1="676" x2="450" y2="702" stroke="#374151" stroke-width="1.5" marker-end="url(#af)"/>
+
+  <!-- ConfirmActivity -->
+  <rect x="335" y="702" width="230" height="52" rx="10" fill="white" stroke="#166534" stroke-width="2"/>
+  <text x="450" y="724" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">ConfirmActivity</text>
+  <text x="450" y="742" text-anchor="middle" font-size="10" fill="#6B7280">Summary · GPS Capture · Submit</text>
+
+  <!-- Offline branch -->
+  <line x1="565" y1="728" x2="680" y2="728" stroke="#E07B00" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#afo)"/>
+  <rect x="680" y="710" width="130" height="36" rx="6" fill="#FFF7ED" stroke="#E07B00" stroke-width="1.5"/>
+  <text x="745" y="726" text-anchor="middle" font-size="9" fill="#E07B00">Offline: Room DB</text>
+  <text x="745" y="740" text-anchor="middle" font-size="9" fill="#E07B00">Auto-sync later</text>
+  <text x="625" y="720" font-size="8" fill="#9CA3AF">no internet</text>
+
+  <!-- Online branch -->
+  <line x1="335" y1="728" x2="200" y2="728" stroke="#166534" stroke-width="1.5" marker-end="url(#afg)"/>
+  <rect x="90" y="710" width="110" height="36" rx="6" fill="#F0FDF4" stroke="#166534" stroke-width="1.5"/>
+  <text x="145" y="726" text-anchor="middle" font-size="9" fill="#166534">✓ Sent to</text>
+  <text x="145" y="740" text-anchor="middle" font-size="9" fill="#166534">PHP API</text>
+  <text x="265" y="720" font-size="8" fill="#9CA3AF">online</text>
+
+  <!-- Back to Home -->
+  <line x1="450" y1="754" x2="450" y2="768" stroke="#374151" stroke-width="1.5"/>
+  <line x1="450" y1="768" x2="600" y2="768" stroke="#374151" stroke-width="1.5"/>
+  <line x1="600" y1="768" x2="600" y2="408" stroke="#374151" stroke-width="1.5"/>
+  <line x1="600" y1="408" x2="565" y2="408" stroke="#374151" stroke-width="1.5" marker-end="url(#af)"/>
+  <text x="610" y="590" font-size="9" fill="#9CA3AF">Back to Home</text>
+
+  <defs>
+    <marker id="af" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#374151"/>
+    </marker>
+    <marker id="afr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#E53935"/>
+    </marker>
+    <marker id="afg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#166534"/>
+    </marker>
+    <marker id="afo" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#E07B00"/>
+    </marker>
+  </defs>
+</svg>

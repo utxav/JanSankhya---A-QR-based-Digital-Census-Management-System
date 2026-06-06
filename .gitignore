@@ -1,0 +1,18 @@
+# Node dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# Android / IDE
+.gradle/
+.idea/
+local.properties
+
+# Logs
+*.log
